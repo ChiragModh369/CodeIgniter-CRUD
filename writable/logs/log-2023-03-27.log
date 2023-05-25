@@ -1,0 +1,77 @@
+CRITICAL - 2023-03-27 09:48:37 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Blog.php on line 115.
+ 1 APPPATH\Controllers\Blog.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Blog.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->login_validate()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 10:03:00 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Blog.php(82): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\upload', '1679891580_651880f36a94d97e9601')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->edit('2')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 10:08:13 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Blog.php(82): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\upload', '1679891893_979e6906bd21af641b2f')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 10:09:28 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Blog.php(82): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\upload', '1679891968_934ba406e8be0a6983b7')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 10:54:20 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Blog.php(85): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\upload', '1679894660_503fae41a1b5bc49ce94')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 19:04:26 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 137.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\Blog.php(85): CodeIgniter\HTTP\Files\UploadedFile->move('FCPATH\\upload', '1679924066_1a5933c5e5ba81bd4ba6')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->edit('1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 19:09:23 --> Undefined array key "pic"
+in APPPATH\Views\Login\Update.php on line 64.
+ 1 APPPATH\Views\Login\Update.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pic"', 'APPPATH\\Views\\Login\\Update.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Login\\Update.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Login/Update', [], true)
+ 5 APPPATH\Controllers\Blog.php(76): view('Login/Update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-03-27 19:09:27 --> Undefined array key "pic"
+in APPPATH\Views\Login\Update.php on line 64.
+ 1 APPPATH\Views\Login\Update.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pic"', 'APPPATH\\Views\\Login\\Update.php', 64)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Login\\Update.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Login/Update', [], true)
+ 5 APPPATH\Controllers\Blog.php(76): view('Login/Update', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

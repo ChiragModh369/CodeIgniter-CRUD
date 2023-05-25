@@ -1,0 +1,29 @@
+CRITICAL - 2023-03-16 12:59:26 --> Class "codeIgniter\Model" not found
+in APPPATH\Models\UserModel.php on line 7.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(312): include_once()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Models\\UserModel.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\UserModel')
+ 4 APPPATH\Controllers\Blog.php(17): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\UserModel')
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->userList()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 13:16:31 --> include(connection.php): Failed to open stream: No such file or directory
+in APPPATH\Views\Register.php on line 2.
+ 1 APPPATH\Views\Register.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(connection.php): Failed to open stream: No such file or directory', 'APPPATH\\Views\\Register.php', 2)
+ 2 APPPATH\Views\Register.php(2): include()
+ 3 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Register.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('Register', [], true)
+ 6 APPPATH\Controllers\Blog.php(12): view('Register')
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->index()
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-16 13:23:53 --> Call to a member function getPost() on null
+in APPPATH\Models\UserModel.php on line 19.
+ 1 APPPATH\Controllers\Blog.php(31): App\Models\UserModel->insertRec()
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Blog->insertRecord()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Blog))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

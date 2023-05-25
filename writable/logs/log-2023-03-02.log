@@ -1,0 +1,30 @@
+CRITICAL - 2023-03-02 12:42:19 --> Too few arguments to function App\Controllers\Home::route(), 0 passed in C:\wamp64\www\CI_4\system\CodeIgniter.php on line 934 and exactly 1 expected
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->route()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:44:33 --> Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(13): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->route('home')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:54:19 --> syntax error, unexpected token "}", expecting ";"
+in APPPATH\Controllers\NewController.php on line 10.
+ 1 SYSTEMPATH\Router\Router.php(507): CodeIgniter\Router\AutoRouter->getRoute('/NewController')
+ 2 SYSTEMPATH\Router\Router.php(206): CodeIgniter\Router\Router->autoRoute('/NewController')
+ 3 SYSTEMPATH\CodeIgniter.php(815): CodeIgniter\Router\Router->handle('/NewController')
+ 4 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-03-02 12:54:47 --> Undefined variable $Chirag
+in APPPATH\Controllers\NewController.php on line 8.
+ 1 APPPATH\Controllers\NewController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $Chirag', 'APPPATH\\Controllers\\NewController.php', 8)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\NewController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\NewController))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
